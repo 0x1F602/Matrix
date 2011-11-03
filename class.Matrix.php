@@ -4,6 +4,7 @@ require_once("class.Table.php");
 class Matrix extends Table {
 	//This function transforms from mathematical matrices elements (origin being 1,1) to programmer arrays (origin 0,0)	
 	public function transform($row, $column) {
+		//TODO: Handle if the row and column are less than the dimension of the array
 		$elem = new Element();
 
 		$elem->row = $row-1;
